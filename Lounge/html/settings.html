@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Settings</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/reset.css"/>
+        <link rel="stylesheet" href="css/main.css"/>
+        <link rel="stylesheet" href="css/navbar.css"/>
+        <link rel="stylesheet" href="css/form.css"/>
+    </head>
+    <body>
+        <!--Main Header-->
+        <ul id="header">
+            <!--Replace with a image-->
+            <li><h2 id="boardTitle">Lounge</h2></li>
+            <!--Displays the current time; currently contains a placeholder-->
+            <li class="headerInfo"><p id="lblTime">00:02</p></li>
+            <li class="headerInfo"><p id="lblUser">User</p></li>
+        </ul>
+        <!--Navigation Bar-->
+        <ul>
+            <li><a href="index.html">Posts</a></li>
+            <li><a href="guidelines.html">Community Guidelines</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+
+        <form>
+            <h2>Settings</h2>
+            <br/>
+            <label>Theme</label>
+            <br/>
+            <select>
+                <option>Light Mode</option>
+                <option>Dark Mode</option>
+            </select>
+            <br/>
+            <label>Font Size</label>
+            <br/>
+            <select>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+            </select>
+            <br/>
+            <label>Font</label>
+            <br/>
+            <select>
+                <option>Monospace</option>
+                <option>Sans serif</option>
+                <option>Serif</option>
+            </select>
+            <br/>
+            <input type="submit"/>
+        </form>
+    </body>
+</html>
