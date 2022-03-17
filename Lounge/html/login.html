@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/reset.css"/>
+        <link rel="stylesheet" href="css/main.css"/>
+        <link rel="stylesheet" href="css/navbar.css"/>
+        <link rel="stylesheet" href="css/form.css"/>
+    </head>
+    <body>
+        <!--Main Header-->
+        <ul id="header">
+            <!--Replace with a image-->
+            <li><h2 id="boardTitle">Lounge</h2></li>
+            <!--Displays the current time; currently contains a placeholder-->
+            <li class="headerInfo"><p id="lblTime">00:02</p></li>
+            <li class="headerInfo"><p id="lblUser">User</p></li>
+        </ul>
+        <!--Navigation Bar-->
+        <ul>
+            <li><a href="index.html">Posts</a></li>
+            <li><a href="guidelines.html">Community Guidelines</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+
+                <!--Login Form-->
+                <form>
+                    <h2>Login to your account</h2>
+                    <input type="text" id="tbUsername" class="tbForm" placeholder="Username" required/>
+                    <br/>
+                    <input type="text" id="tbPassword" class="tbForm" placeholder="Password" required/>
+                    <br/>
+                    <input type="submit" id="form-submit-button"/>
+                </form>
+    </body>
+</html>

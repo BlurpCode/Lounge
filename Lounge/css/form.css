@@ -1,0 +1,33 @@
+form{
+    background-color: rgb(143, 138, 138);
+    text-align: center;
+    margin: auto;
+    border-left:10px; 
+}
+
+form .tbForm, select{
+    padding:5px;
+    margin:2px;
+    width:500px;
+}
+
+#loginForm, #registerForm{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/*Styles the submit button*/
+.form-submit-button {
+    background:#0066A2;
+    color:white;
+    border-style:outset;
+    border-color:#0066A2;
+    height:50px;
+    width:100px;
+    font:bold15px arial,sans-serif;
+    text-shadow:none;
+}
