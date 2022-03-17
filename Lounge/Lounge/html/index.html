@@ -1,0 +1,40 @@
+<!-- Can be accessed through the following URL: http://localhost/CommunityBoard -->
+<html>
+    <head>
+        <title>Posts</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/reset.css"/>
+        <link rel="stylesheet" href="css/main.css"/>
+        <link rel="stylesheet" href="css/navbar.css"/>
+        <link rel="stylesheet" href="css/form.css"/>
+    </head>
+    <body>
+        <!--Main Header-->
+        <ul id="header">
+            <!--Replace with a image-->
+            <li><h2 id="boardTitle">Lounge</h2></li>
+            <!--Displays the current time; currently contains a placeholder-->
+            <li class="headerInfo"><p id="lblTime">00:02</p></li>
+            <li class="headerInfo"><p id="lblUser">User</p></li>
+        </ul>
+        <!--Navigation Bar-->
+        <ul>
+            <li><a href="#">Posts</a></li>
+            <li><a href="guidelines.html">Community Guidelines</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+
+        <!--Form to post new content-->
+        <form id="postForm" action="*">
+            <h2>Create Post</h2>
+            <textarea id="taPost" class="tbForm" placeholder="Edit Text"></textarea>
+            <br/>
+            <!--When button is pressed, a popup is displayed-->
+            <input type="button" value="Add Image"/>
+            <input type="submit"/>
+        </form>
+        <!--Posts-->       
+    </body>
+</html>
