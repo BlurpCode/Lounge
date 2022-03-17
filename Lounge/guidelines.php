@@ -4,14 +4,16 @@ echo <<<CREATE
 <html>
     <head>
         <title>Community Guidelines</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/reset.css"/>
-        <link rel="stylesheet" href="css/main.css"/>
-        <link rel="stylesheet" href="css/navbar.css"/>
     </head>
-    <body>
+    <body class="container">
         <!--Community guidelines-->
-        <p>Inappropriate posts will be taken down. If you no longer wish to have an account, please contact us</p>
+        <p>The following violations could result in a pernament ban or a post taken down:</p>
+        <ul>
+            <li>Spam</li>
+            <li>Discrimimation</li>
+            <li>Nudity</li>
+            <li>Gore</li>
+        </ul>
     </body>
 </html>
 CREATE;

@@ -1,29 +1,43 @@
 <?php
 require_once 'header.php';
 echo <<<CREATE
-<html>
     <head>
         <title>Login</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/reset.css"/>
-        <link rel="stylesheet" href="css/main.css"/>
-        <link rel="stylesheet" href="css/navbar.css"/>
-        <link rel="stylesheet" href="css/form.css"/>
+        <script>
+        $(document).ready(function(){
+            $("#submit").click(function(){
+                var username = $("#tbUsername").val();
+                var password = $("#tbPassword").val();
+
+                if(username!="" && password!=""){
+                    $.ajax({
+                        url:'loginSuccess.php',
+                        type:'post',
+                        data:{
+                            username:username,
+                            password:password
+                        },
+                        success:function(response){
+                            alert(response);
+                        }
+                    });
+                }
+            })
+        });
+    </script>
     </head>
-    <body>
+    <body class="container">
         <!--Login Form-->
-        <form action="login.php">
+        <form class="container" action="loginSuccess.php" method="post">
             <h2>Login to your account</h2>
-            <input type="text" id="tbUsername" name="username" class="tbForm" placeholder="Username"/>
+            <input type="text" id="tbUsername" name="username" class="form-control" placeholder="Username" required/>
             <br/>
-            <input type="text" id="tbPassword" name="password" class="tbForm" placeholder="Password"/>
+            <input type="password" id="tbPassword" name="password" class="form-control" placeholder="Password" required/>
             <br/>
-            <input type="submit" id="form-submit-button" onsubmit="validateForm()"/>
+            <input type="submit" id="form-submit-button" id="submit" class="btn btn-primary float-right"/>
         </form>
+        <div id="errorMessage"></div>
     </body>
-    <footer>
-    <script src="js/validateLogin.js"></script>
-    </footer>
 </html>
 CREATE;
 require_once 'footer.php';

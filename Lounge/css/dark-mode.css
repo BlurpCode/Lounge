@@ -1,0 +1,27 @@
+/*!
+ * Dark Mode Switch v1.0.1 (https://github.com/coliff/dark-mode-switch)
+ * Copyright 2021 C.Oliff
+ * Licensed under MIT (https://github.com/coliff/dark-mode-switch/blob/main/LICENSE)
+ */
+
+ [data-theme="dark"] {
+  background-color: #111 !important;
+  color: #eee;
+}
+
+[data-theme="dark"] #post {
+  background-color: rgb(34, 34, 34) !important;
+}
+
+[data-theme="dark"] .nav-link, .dropdown-menu, .navbar-text, .navbar-brand{
+  color: rgb(133, 133, 133) !important;
+}
+
+[data-theme="dark"] .bg-light {
+  background-color: #222 !important;
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: #000 !important;
+}
+  
